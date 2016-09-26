@@ -19,7 +19,7 @@
             <a href="http://localhost:8000/" class="brand-logo">Registro Coffe Land</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="localhost:8000/usuario/create"><i class="material-icons deep-orange-text left">supervisor_account</i>Nuevo</a></li>
+              <li><a href="http://localhost:8000/usuario/create"><i class="material-icons deep-orange-text left">supervisor_account</i>Nuevo</a></li>
               <li><a href="#"><i class="material-icons deep-orange-text left">person_pin</i>Ingresar</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
