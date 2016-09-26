@@ -15,52 +15,52 @@
 <body>
     <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper teal">
-              <a href="#" class="brand-logo">Coffee</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Salir</a></li>
-              </ul>
-            </div>
+          <div class="nav-wrapper  brown lighten-1">
+            <a href="#!" class="brand-logo center">Registro Coffe Land</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#"><i class="material-icons deep-orange-text">person_pin</i></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="#"><i class="material-icons deep-orange-text">person_pin</i>Ingresar</a></li>
+            </ul>
+          </div>
         </nav>
     </div>
-    <div class="container">
-        <div class="video-container">
-            <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <footer class="page-footer teal">
+
+    @yield('content')
+    
+    <footer class="page-footer  brown lighten-1">
         <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Coffee Land</h5>
+                <p class="grey-text text-lighten-4">Aplicación para registro de certificación.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <!-- <h5 class="white-text">Links</h5> -->
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li> -->
                 </ul>
               </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2016
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
             </div>
         </div>
     </footer>
-
-
 
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script>
+      $( document ).ready(
+        function(){$(".button-collapse").sideNav()})
+    </script>
 </body>
 </html>
