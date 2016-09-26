@@ -12,8 +12,5 @@
 */
 
 Route::get('/', 'FrontController@index');
-Route::get('/prueba', function(){
-	return "This is real shit madafaca";
-});
 Route::get('/contacto', 'FrontController@contacto');
 
