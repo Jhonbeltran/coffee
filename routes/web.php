@@ -12,5 +12,7 @@
 */
 
 Route::get('/', 'FrontController@index');
-Route::get('/contacto', 'FrontController@contacto');
+Route::get('contacto', 'FrontController@contacto');
+
+Route::resource('usuario', 'UsuarioController');
 
