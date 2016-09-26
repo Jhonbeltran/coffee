@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Coffee Land</title>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    {!!Html::style('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css')!!}
+    
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {!!Html::style('http://fonts.googleapis.com/icon?family=Material+Icons')!!}
+    
     
 
       <!--Let browser know website is optimized for mobile-->
@@ -60,9 +62,9 @@
 
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    {!!Html::script('https://code.jquery.com/jquery-2.1.1.min.js')!!}
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    {!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js')!!}
     <script>
       $( document ).ready(
         function(){$(".button-collapse").sideNav()})
