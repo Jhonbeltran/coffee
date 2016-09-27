@@ -36,7 +36,7 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "Información recibida, sin archivo adjunto";
     }
 
     /**

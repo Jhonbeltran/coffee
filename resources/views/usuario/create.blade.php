@@ -7,7 +7,8 @@
 				<h5 class="deep-orange-text">Agrega un nuevo usuario</h5>
 			</div>
 		</div>
-		<form action="">
+
+		{!!Form::open(['route'=>'usuario.store', 'method'=>'POST'])!!}
 			<div class="row">
 				<div class="input-field col s12 l6">
 		            <i class="material-icons prefix">account_circle</i>
@@ -37,6 +38,7 @@
 	                <input type="submit" class="btn deep-orange" value="Registrar" />
 	            </div>
 	        </div>
-		</form>
+		{!!Form::close()!!}
+
 	</div>
 @stop
