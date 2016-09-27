@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Coffee\Http\Requests;
 
+use Coffee\User;
+
 class UsuarioController extends Controller
 {
     /**
@@ -15,7 +17,7 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        $users = \Coffee\User::All();
+        $users = User::All();
         return view('usuario.index', compact('users'));
     }
 
@@ -37,7 +39,7 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        \Coffee\User::create([
+        User::create([
             'name' => $request['name'],
             'email' => $request['email'],
             'password' => bcrypt($request['password'])
@@ -65,7 +67,9 @@ class UsuarioController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        return view('usuario.edit',['user'=>$user]);
+
     }
 
     /**

@@ -4,14 +4,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
-				<h5 class="deep-orange-text">Agrega un nuevo usuario</h5>
+				<h5 class="deep-orange-text">Edición de Usuario</h5>
 			</div>
 			<div class="col s12 l6">
 				<a href="http://localhost:8000/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Usuarios Registrados</a>
 			</div>
 		</div>
 
-		{!!Form::open(['route'=>'usuario.store', 'method'=>'POST'])!!}
+		{!!Form::model($user,['route'=>['usuario.update', $user->id], 'method'=>'PUT'])!!}
 			<div class="row">
 				<div class="input-field col s12 l6">
 		            <i class="material-icons prefix">account_circle</i>
@@ -42,6 +42,5 @@
 	            </div>
 	        </div>
 		{!!Form::close()!!}
-
 	</div>
 @stop
