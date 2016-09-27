@@ -43,7 +43,7 @@ class UsuarioController extends Controller
             'password' => bcrypt($request['password'])
             ]);
 
-        return "Usuario Registrado";
+        return redirect('/usuario')->with('message', 'store');
     }
 
     /**

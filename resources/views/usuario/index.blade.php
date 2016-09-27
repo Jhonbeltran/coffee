@@ -1,8 +1,16 @@
 @extends('layouts.principal')
 
+<?php $message=Session::get('message')?>
+
+@if($message == 'store')
+	<script>
+		alert('Usuario creado correctamente');
+	</script>	
+@endif
+
 @section('content')
 <div class="container">
-	<table class="highlight centered responsive-table">
+	<table class="highlight centered">
 		<thead>
 			<th>Nombre</th>
 			<th>Correo</th>
