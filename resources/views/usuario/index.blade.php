@@ -9,7 +9,12 @@
 @endif
 @if($message == 'edit')
 	<script>
-		alert('Usuario editado correctamente');
+		alert('Usuario editado correctamente GALLINA');
+	</script>	
+@endif
+@if($message == 'delete')
+	<script>
+		alert('El usuario ha sido eliminado');
 	</script>	
 @endif
 

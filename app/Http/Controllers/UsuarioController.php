@@ -97,6 +97,7 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::destroy($id);
+        return redirect('/usuario')->with('message', 'delete');
     }
 }

@@ -14,8 +14,16 @@
 		{!!Form::model($user,['route'=>['usuario.update', $user->id], 'method'=>'PUT'])!!}
 			@include('usuario.forms.usr')
 			<div class="row center">
-	            <div class="col s12">
-	                {!!Form::submit('Actualizar', ['class'=>'btn deep-orange'])!!}
+	            <div class="col s6">
+	                {!!Form::submit('Actualizar', ['class'=>'btn deep-orange '])!!}
+	            </div>
+	        
+		{!!Form::close()!!}
+		
+	    {!!Form::open(['route'=>['usuario.destroy', $user->id], 'method'=>'DELETE'])!!}
+			
+	            <div class="col s6">
+	                {!!Form::submit('Eliminar', ['class'=>'btn brown darken-4'])!!}
 	            </div>
 	        </div>
 		{!!Form::close()!!}
