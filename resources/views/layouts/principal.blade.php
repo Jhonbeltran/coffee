@@ -18,7 +18,7 @@
     <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper  brown lighten-1">
-            <a href="/" class="brand-logo">Registro Coffe Land</a>
+            <a href="{!!URL::to('/')!!}" class="brand-logo">Registro Coffe Land</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/usuario/create"><i class="material-icons deep-orange-text left">supervisor_account</i>Nuevo</a></li>
