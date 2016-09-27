@@ -2,9 +2,12 @@
 
 @section('content')
 	<div class="container">
-		<div class="row center">
-			<div class="col s12">
+		<div class="row">
+			<div class="col s12 l6">
 				<h5 class="deep-orange-text">Agrega un nuevo usuario</h5>
+			</div>
+			<div class="col s12 l6">
+				<a href="http://localhost:8000/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Usuarios Registrados</a>
 			</div>
 		</div>
 
