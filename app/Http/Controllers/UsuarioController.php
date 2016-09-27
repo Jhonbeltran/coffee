@@ -15,7 +15,8 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        //
+        $users = \Coffee\User::All();
+        return view('usuario.index', compact('users'));
     }
 
     /**
