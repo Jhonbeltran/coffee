@@ -7,6 +7,11 @@
 		alert('Usuario creado correctamente');
 	</script>	
 @endif
+@if($message == 'edit')
+	<script>
+		alert('Usuario editado correctamente');
+	</script>	
+@endif
 
 @section('content')
 <div class="container">

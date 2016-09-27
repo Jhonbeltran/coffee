@@ -15,7 +15,7 @@
 			@include('usuario.forms.usr')
 			<div class="row center">
 	            <div class="col s12">
-	                {!!Form::submit('Registrar', ['class'=>'btn deep-orange'])!!}
+	                {!!Form::submit('Actualizar', ['class'=>'btn deep-orange'])!!}
 	            </div>
 	        </div>
 		{!!Form::close()!!}

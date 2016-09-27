@@ -8,6 +8,7 @@ use Coffee\Http\Requests;
 
 use Coffee\User;
 
+
 class UsuarioController extends Controller
 {
     /**
@@ -42,7 +43,7 @@ class UsuarioController extends Controller
         User::create([
             'name' => $request['name'],
             'email' => $request['email'],
-            'password' => bcrypt($request['password'])
+            'password' => $request['password']
             ]);
 
         return redirect('/usuario')->with('message', 'store');
@@ -81,7 +82,11 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $user->fill($request->all());
+        $user->save();
+
+        return redirect('/usuario')->with('message', 'edit');
     }
 
     /**
