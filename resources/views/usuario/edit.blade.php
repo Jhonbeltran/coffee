@@ -7,7 +7,7 @@
 				<h5 class="deep-orange-text">Edición de Usuario</h5>
 			</div>
 			<div class="col s12 l6">
-				<a href="http://localhost:8000/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Usuarios Registrados</a>
+				<a href="/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Usuarios Registrados</a>
 			</div>
 		</div>
 
