@@ -1,6 +1,6 @@
 <?php
 
-namespace coffee\Providers;
+namespace Coffee\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

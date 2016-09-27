@@ -1,6 +1,6 @@
 <?php
 
-namespace coffee\Http\Controllers;
+namespace Coffee\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

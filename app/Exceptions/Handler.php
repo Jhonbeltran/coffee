@@ -1,6 +1,6 @@
 <?php
 
-namespace coffee\Exceptions;
+namespace Coffee\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

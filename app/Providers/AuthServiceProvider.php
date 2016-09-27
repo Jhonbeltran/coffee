@@ -1,6 +1,6 @@
 <?php
 
-namespace coffee\Providers;
+namespace Coffee\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'coffee\Model' => 'coffee\Policies\ModelPolicy',
+        'Coffee\Model' => 'Coffee\Policies\ModelPolicy',
     ];
 
     /**

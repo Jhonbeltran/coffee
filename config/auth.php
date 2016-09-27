@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => coffee\User::class,
+            'model' => Coffee\User::class,
         ],
 
         // 'users' => [

@@ -1,6 +1,6 @@
 <?php
 
-namespace coffee\Providers;
+namespace Coffee\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'coffee\Events\SomeEvent' => [
-            'coffee\Listeners\EventListener',
+        'Coffee\Events\SomeEvent' => [
+            'Coffee\Listeners\EventListener',
         ],
     ];
 

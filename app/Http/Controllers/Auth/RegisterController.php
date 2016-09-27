@@ -1,10 +1,10 @@
 <?php
 
-namespace coffee\Http\Controllers\Auth;
+namespace Coffee\Http\Controllers\Auth;
 
-use coffee\User;
+use Coffee\User;
 use Validator;
-use coffee\Http\Controllers\Controller;
+use Coffee\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller

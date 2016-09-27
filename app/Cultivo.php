@@ -1,6 +1,6 @@
 <?php
 
-namespace coffee;
+namespace Coffee;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(coffee\User::class, function (Faker\Generator $faker) {
+$factory->define(Coffee\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [

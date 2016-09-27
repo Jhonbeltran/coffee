@@ -1,6 +1,6 @@
 <?php
 
-namespace coffee\Http\Middleware;
+namespace Coffee\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

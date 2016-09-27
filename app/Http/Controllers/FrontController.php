@@ -1,10 +1,10 @@
 <?php
 
-namespace coffee\Http\Controllers;
+namespace Coffee\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use coffee\Http\Requests;
+use Coffee\Http\Requests;
 
 class FrontController extends Controller
 {

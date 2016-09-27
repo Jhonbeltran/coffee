@@ -1,10 +1,10 @@
 <?php
 
-namespace coffee\Http\Controllers;
+namespace Coffee\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use coffee\Http\Requests;
+use Coffee\Http\Requests;
 
 class UsuarioController extends Controller
 {
@@ -36,7 +36,13 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        return "Información recibida, sin archivo adjunto";
+        \Coffee\User::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => bcrypt($request['password'])
+            ]);
+
+        return "Usuario Registrado";
     }
 
     /**

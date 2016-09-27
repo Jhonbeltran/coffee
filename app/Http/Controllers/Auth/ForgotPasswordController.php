@@ -1,8 +1,8 @@
 <?php
 
-namespace coffee\Http\Controllers\Auth;
+namespace Coffee\Http\Controllers\Auth;
 
-use coffee\Http\Controllers\Controller;
+use Coffee\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller

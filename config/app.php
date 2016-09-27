@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        coffee\Providers\AppServiceProvider::class,
-        coffee\Providers\AuthServiceProvider::class,
-        // coffee\Providers\BroadcastServiceProvider::class,
-        coffee\Providers\EventServiceProvider::class,
-        coffee\Providers\RouteServiceProvider::class,
+        Coffee\Providers\AppServiceProvider::class,
+        Coffee\Providers\AuthServiceProvider::class,
+        // Coffee\Providers\BroadcastServiceProvider::class,
+        Coffee\Providers\EventServiceProvider::class,
+        Coffee\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
     ],
