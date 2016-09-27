@@ -3,13 +3,11 @@
 namespace Coffee\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Coffee\Http\Requests\LoginRequest;
+use Auth;
 use Coffee\Http\Requests;
 
-use Coffee\User;
-
-
-class UsuarioController extends Controller
+class LogController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +16,7 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        $users = User::All();
-        return view('usuario.index', compact('users'));
+        //
     }
 
     /**
@@ -29,7 +26,7 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        return view('usuario.create');
+        //
     }
 
     /**
@@ -38,15 +35,12 @@ class UsuarioController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LoginRequest $request)
     {
-        User::create([
-            'name' => $request['name'],
-            'email' => $request['email'],
-            'password' => bcrypt($request['password'])
-            ]);
-
-        return redirect('/usuario')->with('message', 'store');
+        if(Auth::attempt(['email' => $request['email'], 'password' => $request['password']])){
+            return redirect('/')->with('message', 'success');
+        }
+        return redirect('/login')->with('message', 'fail');
     }
 
     /**
@@ -68,9 +62,7 @@ class UsuarioController extends Controller
      */
     public function edit($id)
     {
-        $user = User::find($id);
-        return view('usuario.edit',['user'=>$user]);
-
+        //
     }
 
     /**
@@ -82,11 +74,7 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
-        $user->fill($request->all());
-        $user->save();
-
-        return redirect('/usuario')->with('message', 'edit');
+        //
     }
 
     /**
@@ -97,7 +85,6 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
-        User::destroy($id);
-        return redirect('/usuario')->with('message', 'delete');
+        //
     }
 }

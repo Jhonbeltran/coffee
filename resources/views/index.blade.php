@@ -1,5 +1,11 @@
 @extends('layouts.principal')
+<?php $message=Session::get('message')?>
 
+@if($message == 'success')
+  <script>
+    alert('Ha logeado correctamente');
+  </script> 
+@endif
 @section('content')
   <!-- <div class="container"> -->
       <div class="row">

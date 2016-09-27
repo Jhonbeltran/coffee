@@ -18,8 +18,8 @@ class FrontController extends Controller
         return view('index');
     }
 
-    public function contacto()
+    public function login()
     {
-        return view('contacto');
+        return view('login');
     }
 }

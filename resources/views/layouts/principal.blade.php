@@ -12,7 +12,7 @@
     
 
       <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 </head>
 <body>
     <div class="navbar-fixed">
@@ -22,10 +22,10 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/usuario/create"><i class="material-icons deep-orange-text left">supervisor_account</i>Nuevo</a></li>
-              <li><a href="#"><i class="material-icons deep-orange-text left">person_pin</i>Ingresar</a></li>
+              <li><a href="/login"><i class="material-icons deep-orange-text left">person_pin</i>Ingresar</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li><a href="#">Ingresar</a>
+              <li><a href="/login">Ingresar</a>
               </li>
               <li>
                 <a href="/usuario/create">Nuevo</a>

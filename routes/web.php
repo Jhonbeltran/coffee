@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'FrontController@index');
-Route::get('contacto', 'FrontController@contacto');
+Route::get('/login', 'FrontController@login');
 
 Route::resource('usuario', 'UsuarioController');
+
+Route::resource('log', 'LogController');
 
