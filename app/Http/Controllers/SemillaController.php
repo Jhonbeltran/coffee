@@ -39,7 +39,7 @@ class SemillaController extends Controller
     {
         \Coffee\Semilla::create(['nombre' => $request['name']]);
  
-         return "Usuario Registrado";
+        return redirect('/semilla')->with('message', 'store');
     }
 
     /**
