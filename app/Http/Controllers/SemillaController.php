@@ -36,7 +36,9 @@ class SemillaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        \Coffee\Semilla::create(['nombre' => $request['name']]);
+ 
+         return "Usuario Registrado";
     }
 
     /**

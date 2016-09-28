@@ -7,7 +7,7 @@
 				<h5 class="deep-orange-text">¿Nuevas semillas? Acá puedes agregarlas</h5>
 			</div>
 		</div>
-		<form action="">
+		{!!Form::open(['route'=>'semilla.store', 'method'=>'POST'])!!}
 			<div class="row">
 				<div class="input-field col s12 center">
 		            <i class="material-icons prefix">invert_colors</i>
@@ -20,6 +20,6 @@
 	                <input type="submit" class="btn deep-orange" value="Agregar" />
 	            </div>
 	        </div>
-		</form>
+		{!!Form::close()!!}
 	</div>
 @stop
