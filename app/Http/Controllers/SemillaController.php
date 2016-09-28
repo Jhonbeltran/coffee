@@ -5,6 +5,7 @@ namespace Coffee\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Coffee\Http\Requests;
+use Coffee\Semilla;
 
 class SemillaController extends Controller
 {
@@ -15,7 +16,7 @@ class SemillaController extends Controller
      */
     public function index()
     {
-        $semillas = \Coffee\Semilla::All();
+        $semillas = Semilla::All();
         return view('semilla.index', compact('semillas'));
     }
 
@@ -37,7 +38,7 @@ class SemillaController extends Controller
      */
     public function store(Request $request)
     {
-        \Coffee\Semilla::create(['nombre' => $request['name']]);
+        Semilla::create(['nombre' => $request['name']]);
  
         return redirect('/semilla')->with('message', 'store');
     }
@@ -61,7 +62,8 @@ class SemillaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $semilla = Semilla::find($id);
+        return view('semilla.edit',['semilla'=>$semilla]);
     }
 
     /**
@@ -73,7 +75,11 @@ class SemillaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $semilla = Semilla::find($id);
+        $semilla->fill($request->all());
+        $semilla->save();
+
+        return redirect('/semilla')->with('message', 'edit');
     }
 
     /**

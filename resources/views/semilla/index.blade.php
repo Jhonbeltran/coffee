@@ -6,6 +6,11 @@
 		alert('Semilla agregada correctamente');
 	</script>	
 @endif
+@if($message == 'store')
+	<script>
+		alert('Semilla actualizada');
+	</script>	
+@endif
 @section('content')
 <div class="container">
 	<div class="row center">

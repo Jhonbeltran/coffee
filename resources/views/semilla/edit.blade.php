@@ -4,14 +4,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
-				<h5 class="deep-orange-text">¿Nuevas semillas?</h5>
+				<h5 class="deep-orange-text">Edición de Semillas</h5>
 			</div>
 			<div class="col s12 l6">
- 				<a href="/semilla/" class="waves-effect waves-light btn btn-flat left btn-large right">Semillas almacenadas</a>
- 			</div>
+				<a href="/semilla/" class="waves-effect waves-light btn btn-flat left btn-large right">Semillas almacenadas</a>
+			</div>
 		</div>
-		<div class="row"></div>
-		{!!Form::open(['route'=>'semilla.store', 'method'=>'POST'])!!}
+
+		{!!Form::model($semilla,['route'=>['semilla.update', $semilla->id], 'method'=>'PUT'])!!}
 			<div class="row">
 				<div class="input-field col s12 center">
 		            <i class="material-icons prefix">invert_colors</i>
@@ -21,7 +21,7 @@
 			</div>
 			<div class="row center">
 	            <div class="col s12">
-	                {!!Form::submit('Registrar', ['class'=>'btn deep-orange'])!!}
+	                {!!Form::submit('Actualizar', ['class'=>'btn deep-orange'])!!}
 	            </div>
 	        </div>
 		{!!Form::close()!!}
