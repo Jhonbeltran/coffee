@@ -20,6 +20,11 @@
 
 @section('content')
 <div class="container">
+	<div class="row center">
+		<div class="col s12">
+			<h5 class="brown-text card-panel deep-orange lighten-2">Usuarios Almacenados</h5>
+		</div>
+	</div>
 	<table class="highlight centered">
 		<thead>
 			<th>Nombre</th>

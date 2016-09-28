@@ -15,7 +15,8 @@ class SemillaController extends Controller
      */
     public function index()
     {
-        //
+        $semillas = \Coffee\Semilla::All();
+        return view('semilla.index', compact('semillas'));
     }
 
     /**
