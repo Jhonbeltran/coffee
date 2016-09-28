@@ -2,11 +2,15 @@
 
 @section('content')
 	<div class="container">
-		<div class="row center">
-			<div class="col s12">
-				<h5 class="deep-orange-text">¿Nuevas semillas? Acá puedes agregarlas</h5>
+		<div class="row">
+			<div class="col s12 l6">
+				<h5 class="deep-orange-text">¿Nuevas semillas?</h5>
 			</div>
+			<div class="col s12 l6">
+ 				<a href="/semilla/" class="waves-effect waves-light btn btn-flat left btn-large right">Semillas almacenadas</a>
+ 			</div>
 		</div>
+		<div class="row"></div>
 		{!!Form::open(['route'=>'semilla.store', 'method'=>'POST'])!!}
 			<div class="row">
 				<div class="input-field col s12 center">
