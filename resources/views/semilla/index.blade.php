@@ -17,12 +17,15 @@
 		<thead>
 			<th>id</th>
 			<th>Nombre</th>
+			<th>Operacion</th>
 		</thead>
 		@foreach($semillas as $semilla)
 		<tbody>
 			<td>{{$semilla->id}}</td>
 			<td>{{$semilla->nombre}}</td>
-			<td></td>
+			<td>
+				{!!link_to_route('semilla.edit', $title = 'Editar', $parameters = $semilla->id, $attributes = ['class'=>'btn btn-flat waves-effect waves-red'])!!}
+			</td>
 		</tbody>
 		@endforeach
 	</table>
