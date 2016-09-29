@@ -5,9 +5,10 @@ namespace Coffee\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Coffee\Http\Requests;
+
 use Coffee\Semilla;
 
-class SemillaController extends Controller
+class SeedController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -38,8 +39,8 @@ class SemillaController extends Controller
      */
     public function store(Request $request)
     {
-        Semilla::create(['nombre' => $request['name']]);
- 
+        User::create(['nombre' => $request['nombre']]);
+
         return redirect('/semilla')->with('message', 'store');
     }
 
@@ -80,7 +81,6 @@ class SemillaController extends Controller
         $semilla->save();
 
         return redirect('/semilla')->with('message', 'edit');
-    }
 
     /**
      * Remove the specified resource from storage.
@@ -90,6 +90,7 @@ class SemillaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Semilla::destroy($id);
+        return redirect('/semilla')->with('message', 'delete');
     }
 }
