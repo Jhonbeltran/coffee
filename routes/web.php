@@ -18,7 +18,7 @@ Route::resource('usuario', 'UsuarioController');
 
 Route::resource('log', 'LogController');
 
-Route::resource('semilla', 'SemillaController');
+Route::resource('semilla', 'SeedController');
 
 Route::resource('cultivo', 'CropController');
 
