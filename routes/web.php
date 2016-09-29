@@ -20,3 +20,5 @@ Route::resource('log', 'LogController');
 
 Route::resource('semilla', 'SemillaController');
 
+Route::resource('cultivo', 'CropController');
+

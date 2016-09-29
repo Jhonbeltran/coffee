@@ -6,7 +6,7 @@
 		alert('Semilla agregada correctamente');
 	</script>	
 @endif
-@if($message == 'store')
+@if($message == 'edit')
 	<script>
 		alert('Semilla actualizada');
 	</script>	

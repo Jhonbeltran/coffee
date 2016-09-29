@@ -21,7 +21,7 @@
 			</div>
 			<div class="row center">
 	            <div class="col s12">
-	                {!!Form::submit('Actualizar', ['class'=>'btn deep-orange'])!!}
+	                {!!Form::submit('Registrar', ['class'=>'btn deep-orange'])!!}
 	            </div>
 	        </div>
 		{!!Form::close()!!}

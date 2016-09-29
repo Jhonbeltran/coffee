@@ -17,8 +17,9 @@ class CreateCultivosTable extends Migration
             $table->increments('id');
             $table->string('responsable');
             $table->string('direccion');
-            $table->integer('semilla_id')->unsigned();
-            $table->foreign('semilla_id')->references('id')->on('semillas');
+            $table->string('semilla_id');
+            /*$table->integer('semilla_id')->unsigned();
+            $table->foreign('semilla_id')->references('id')->on('semillas');*/
             $table->timestamps();
         });
     }
