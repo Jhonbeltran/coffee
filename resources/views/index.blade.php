@@ -12,7 +12,7 @@
         <div class="col s12 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="http://www.revistasumma.com/wp-content/uploads/2015/04/Caf%C3%A91.jpg">
+              <img class="activator" src="https://static.pexels.com/photos/6347/coffee-cup-working-happy.jpg">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Ingresar Datos<i class="material-icons right">more_vert</i></span>
@@ -27,11 +27,11 @@
         <div class="col s12 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://static.pexels.com/photos/6347/coffee-cup-working-happy.jpg">
+              <img class="activator" src="http://www.revistasumma.com/wp-content/uploads/2015/04/Caf%C3%A91.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Modificar<i class="material-icons right">more_vert</i></span>
-              <p><a href="/semilla/create" class="deep-orange-text">Editar</a></p>
+              <span class="card-title activator grey-text text-darken-4">Semillas<i class="material-icons right">more_vert</i></span>
+              <p><a href="/semilla/create" class="deep-orange-text">Agregar</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Modificar<i class="material-icons right">close</i></span>

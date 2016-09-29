@@ -26,7 +26,7 @@
       <div class="row">
 
         <div class="col s12 l6 hide-on-med-and-down">
-          <img src="http://i.imgur.com/JR3DJho.jpg" width="280" alt="" class="imagen">
+          <img src="http://i.imgur.com/SF3BmOU.png" width="280" alt="" class="imagen">
           </div>
 
         <div class="col s12 l6">
@@ -57,7 +57,7 @@
           {!!Form::close()!!}
             
 
-          <p class="flow-text center-align">Registra todos los datos estés donde estés, apliación 100% adaptable (necesitarás conexión a internet)</p>
+          <p class="flow-text center-align">Registra todos los datos estés donde estés, aplicación 100% adaptable (necesitarás conexión a internet)</p>
                     
         </div>
 
