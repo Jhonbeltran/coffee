@@ -80,7 +80,7 @@ class CropController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $cultivo = User::find($id);
+        $cultivo = Cultivo::find($id);
         $cultivo->fill($request->all());
         $cultivo->save();
 

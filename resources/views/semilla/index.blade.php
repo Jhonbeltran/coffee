@@ -4,17 +4,17 @@
 
 @if($message == 'store')
 	<script>
-		alert('Usuario creado correctamente');
+		alert('Semilla almacenada correctamente');
 	</script>	
 @endif
 @if($message == 'edit')
 	<script>
-		alert('Usuario editado correctamente GALLINA');
+		alert('Semilla editada correctamente');
 	</script>	
 @endif
 @if($message == 'delete')
 	<script>
-		alert('El usuario ha sido eliminado');
+		alert('El registro de la semilla ha sido eliminado');
 	</script>	
 @endif
 

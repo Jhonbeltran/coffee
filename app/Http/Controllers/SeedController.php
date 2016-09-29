@@ -39,7 +39,7 @@ class SeedController extends Controller
      */
     public function store(Request $request)
     {
-        User::create(['nombre' => $request['nombre']]);
+        Semilla::create(['nombre' => $request['nombre']]);
 
         return redirect('/semilla')->with('message', 'store');
     }
@@ -81,7 +81,7 @@ class SeedController extends Controller
         $semilla->save();
 
         return redirect('/semilla')->with('message', 'edit');
-
+    }
     /**
      * Remove the specified resource from storage.
      *

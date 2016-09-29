@@ -9,12 +9,12 @@
 @endif
 @if($message == 'edit')
 	<script>
-		alert('Usuario editado correctamente GALLINA');
+		alert('Cultivo editado correctamente');
 	</script>	
 @endif
 @if($message == 'delete')
 	<script>
-		alert('El usuario ha sido eliminado');
+		alert('El registro del cultivo ha sido eliminado');
 	</script>	
 @endif
 
