@@ -7,7 +7,7 @@
 				<h5 class="deep-orange-text">Agrega un nuevo Lote de cultivo</h5>
 			</div>
 			<div class="col s12 l6">
-				<a href="http://localhost:8000/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Cultivos almacenados</a>
+				<a href="/cultivo/" class="waves-effect waves-light btn btn-flat left btn-large right">Cultivos almacenados</a>
 			</div>
 		</div>
 

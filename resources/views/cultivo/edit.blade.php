@@ -7,7 +7,7 @@
 				<h5 class="deep-orange-text">Edición de Registro de Cultivos</h5>
 			</div>
 			<div class="col s12 l6">
-				<a href="/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Cultivos almacenados</a>
+				<a href="/cultivo/" class="waves-effect waves-light btn btn-flat left btn-large right">Cultivos almacenados</a>
 			</div>
 		</div>
 
