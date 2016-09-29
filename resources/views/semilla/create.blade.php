@@ -13,7 +13,7 @@
 		<div class="row"></div>
 		{!!Form::open(['route'=>'semilla.store', 'method'=>'POST'])!!}
 			<div class="row">
-				<div class="input-field col s12 center">
+				<div class="input-field col s12">
 		            <i class="material-icons prefix">invert_colors</i>
 		            {!!Form::text('name', null, ['class'=>'validate', 'id'=>'icon_prefix'])!!}
 		            <label for="icon_prefix">Nombre</label>

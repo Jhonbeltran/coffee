@@ -17,7 +17,7 @@ class CropController extends Controller
      */
     public function index()
     {
-        $cultivos = User::All();
+        $cultivos = Cultivo::All();
         return view('cultivo.index', compact('cultivos'));
     }
 
@@ -45,8 +45,7 @@ class CropController extends Controller
             'semilla_id' => $request['semilla_id']
             ]);
 
-        /*return redirect('/usuario')->with('message', 'store');*/
-        return "Usuario Registrado";
+        return redirect('/cultivo')->with('message', 'store');
     }
 
     /**
@@ -85,7 +84,7 @@ class CropController extends Controller
         $cultivo->fill($request->all());
         $cultivo->save();
 
-        /*return redirect('/cultivo')->with('message', 'edit');*/
+        return redirect('/cultivo')->with('message', 'edit');
     }
 
     /**

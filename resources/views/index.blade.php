@@ -16,7 +16,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Ingresar Datos<i class="material-icons right">more_vert</i></span>
-              <p><a href="#" class="deep-orange-text">Iniciar</a></p>
+              <p><a href="/cultivo/create" class="deep-orange-text">Iniciar</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Ingresar Datos<i class="material-icons right">close</i></span>
@@ -46,7 +46,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Registro<i class="material-icons right">more_vert</i></span>
-              <p><a href="#" class="deep-orange-text">Ver</a></p>
+              <p><a href="/cultivo/" class="deep-orange-text">Ver</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Registro<i class="material-icons right">close</i></span>
