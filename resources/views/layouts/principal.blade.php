@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Coffee Land</title>
     <!-- Compiled and minified CSS -->
-    {!!Html::style('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css')!!}
+     {!! MaterializeCSS::include_full() !!}
     
     <!--Import Google Icon Font-->
     {!!Html::style('http://fonts.googleapis.com/icon?family=Material+Icons')!!}
+    {!!Html::style('https://fonts.googleapis.com/css?family=Sansita+One')!!}
+    
     
     
 
@@ -15,6 +17,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 </head>
 <body>
+    <style type="text/css">
+      .brand-logo{font-family: 'Sansita One', cursive;};
+    </style>
     <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper  brown lighten-1">
@@ -64,7 +69,7 @@
     <!--Import jQuery before materialize.js-->
     {!!Html::script('https://code.jquery.com/jquery-2.1.1.min.js')!!}
     <!-- Compiled and minified JavaScript -->
-    {!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js')!!}
+    {!! MaterializeCSS::include_js() !!}
     <script>
       $( document ).ready(
         function(){$(".button-collapse").sideNav()})
