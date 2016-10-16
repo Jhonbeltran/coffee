@@ -22,12 +22,13 @@
     </style>
     <div class="navbar-fixed">
         <nav>
-          <div class="nav-wrapper  brown lighten-1">
-            <a href="{!!URL::to('/')!!}" class="brand-logo">Registro Coffe Land</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <div class="nav-wrapper z-depth-0 brown lighten-5">
+            <a href="{!!URL::to('/')!!}" class="brand-logo brown-text text-darken-2 hide-on-med-and-down">&nbsp;&nbsp;Registro Coffe Land</a>
+            <a href="{!!URL::to('/')!!}" class="brand-logo  brown-text text-darken-2 hide-on-large-only">Coffe Land</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons brown-text text-darken-2">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="/usuario/create"><i class="material-icons deep-orange-text left">supervisor_account</i>Nuevo</a></li>
-              <li><a href="/login"><i class="material-icons deep-orange-text left">person_pin</i>Ingresar</a></li>
+              <li><a href="/usuario/create" class="brown-text text-darken-2"><i class="material-icons grey-text left">supervisor_account</i>Nuevo</a></li>
+              <li><a href="/login" class="brown-text text-darken-2"><i class="material-icons grey-text left">person_pin</i>Ingresar</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="/login">Ingresar</a>
