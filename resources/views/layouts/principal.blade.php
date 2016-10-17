@@ -43,23 +43,23 @@
 
     @yield('content')
     
-    <footer class="page-footer  brown lighten-1">
+    <footer class="page-footer  brown lighten-5">
         <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Coffee Land</h5>
-                <p class="grey-text text-lighten-4">Aplicación para registro de certificación.</p>
+                <h5 class="brown-text text-darken-2 brand-logo">Coffee Land</h5>
+                <p class="brown-text text-darken-2">Aplicación para registro de certificación.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <!-- <h5 class="white-text">Links</h5> -->
+                <h5 class="brown-text text-darken-2">Enlaces</h5>
                 <ul>
-                  <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li> -->
+                  <li><a class="brown-text text-darken-2" href="#!">Contactanos</a></li>
                 </ul>
               </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <div class="container">
+            <div class="container brown-text text-darken-3">
             © 2016
             <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
             </div>
