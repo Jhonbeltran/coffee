@@ -23,7 +23,7 @@
     <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper z-depth-0 brown lighten-5">
-            <a href="{!!URL::to('/')!!}" class="brand-logo brown-text text-darken-2 hide-on-med-and-down">&nbsp;&nbsp;Registro Coffe Land</a>
+            <a href="{!!URL::to('/home')!!}" class="brand-logo brown-text text-darken-2 hide-on-med-and-down">&nbsp;&nbsp;Registro Coffe Land</a>
             <a href="{!!URL::to('/')!!}" class="brand-logo  brown-text text-darken-2 hide-on-large-only">Coffe Land</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons brown-text text-darken-2">menu</i></a>
             <ul class="right hide-on-med-and-down">

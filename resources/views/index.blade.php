@@ -7,8 +7,52 @@
   </script> 
 @endif
 @section('content')
+
+  <div class="row">
+    <div class="col s12 m6 l4">
+      <div class="col">
+        <div class="icon-block">
+            <h2 class="center brown-text hide-on-small-only"><i class="material-icons"></i></h2>
+            <a class="grey-text center" href="/cultivo/create"><h5 class="center"><i class="material-icons brown-text">mode_edit</i>&nbsp;Ingresar Datos</h5></a>
+
+            <p class="light center">Ingresa los datos de el cultivo, recuerda que estamos buscando la certificación, así que vamos a divertirnos.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon-block">
+            <h2 class="center brown-text hide-on-small-only"><i class="material-icons"></i></h2>
+            <a class="grey-text center" href="/semilla/create"><h5 class="center"><i class="material-icons brown-text">opacity</i>&nbsp;Semillas</h5></a>
+
+            <p class="light center">¿Quieres agregar alguna semilla? ¡Te apuesto a que esta va a ser la mejor semilla!.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4 hide-on-med-and-down">
+      <img width="100%" height="100%" src="http://mypicpic-drink.ucoz.ru/_ph/4/87146870.jpg" alt="">
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="col">
+        <div class="icon-block">
+            <h2 class="center brown-text hide-on-small-only"><i class="material-icons"></i></h2>
+            <a class="grey-text center" href="/cultivo/"><h5 class="center"><i class="material-icons brown-text">dns</i>&nbsp;Registro</h5></a>
+
+            <p class="light center">En esta sección puedes revisar todo el registro del cultivo, Mira todo lo que ha sucedido.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="icon-block">
+            <h2 class="center brown-text hide-on-small-only"><i class="material-icons"></i></h2>
+            <a class="grey-text center" href="#!"><h5 class="center"><i class="material-icons brown-text">face</i>&nbsp;Contactanos</h5></a>
+
+            <p class="light center">¿Quieres hablar con nosotros? Da click acá para ponernos en contacto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- <div class="container"> -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col s12 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
@@ -54,6 +98,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
   <!-- </div> -->
+  <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+  </script>
 @stop
