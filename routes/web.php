@@ -12,7 +12,7 @@
 */
 
 Route::get('/', 'FrontController@login');
-Route::get('home', 'FrontController@index');
+Route::get('inicio', 'FrontController@index');
 
 Route::resource('usuario', 'UsuarioController');
 
