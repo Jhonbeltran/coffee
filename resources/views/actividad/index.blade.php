@@ -22,7 +22,7 @@
 <div class="container">
 	<div class="row center">
 		<div class="col s12">
-			<h5 class="brown-text card-panel deep-orange lighten-2">Actividades</h5>
+			<h5 class="gris card-panel subtable">Actividades</h5>
 		</div>
 	</div>
 	<table class="highlight centered">

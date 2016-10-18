@@ -22,9 +22,12 @@
       .navigation{background-color: #c7ad88 !important;}
       .logo{color: #935347 !important;}
       .icon{color: #64706c !important; font-size: 3em !important;}
+      .gris{color: #64706c !important;}
       .icon-index{color: #64706c !important; font-size: 1.5em !important;}
       .borde{border: 1px #64706c solid}
       .sesion{font-family: 'Quattrocento Sans', sans-serif;}
+      .subtable{background-color: #ede9ce !important;}
+
       /* label color */
        .input-field label {
          color: #000;
