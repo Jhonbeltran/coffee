@@ -41,32 +41,11 @@
       </div>
 
       <div class="col">
-      
-      <div class="card sticky-action small hide-on-large-only">
-        <div class="card-image waves-effect">
-          <img class="activator" src="https://hd.unsplash.com/photo-1472466031646-d14c597e165d">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">¿Nos necesitas?<i class="material-icons right">more_vert</i></span>
-          <p><a href="#" class="brown-text">Contáctanos</a></p>
-        </div>
-        <div class="card-action">
-          <a href="#" class="brown-text">Contáctanos</a>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">¿Nos necesitas?<i class="material-icons right">close</i></span>
-          <p>¿Quieres hablar con nosotros? Da click acá para ponernos en contacto</p>
-        </div>
-        
-      </div>
-
-
-
         <div class="icon-block hide-on-med-and-down">
             <h2 class="center brown-text hide-on-small-only"><i class="material-icons"></i></h2>
-            <a class="grey-text center" href="#!"><h5 class="center"><i class="material-icons brown-text">face</i>&nbsp;Contactanos</h5></a>
+            <a class="grey-text center" href="/actividad/"><h5 class="center"><i class="material-icons brown-text">face</i>&nbsp;Actividades</h5></a>
 
-            <p class="light center">¿Quieres hablar con nosotros? Da click acá para ponernos en contacto.</p>
+            <p class="light center">¿Alguna nueva tarea para hacer en el cultivo? ¡Agrégala ahora!</p>
         </div>
       </div>
     </div>
