@@ -7,7 +7,7 @@
     {!!Html::style('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css')!!}
     
     <!--Import Google Icon Font-->
-    {!!Html::style('http://fonts.googleapis.com/icon?family=Material+Icons')!!}
+    {!!Html::style('https://fonts.googleapis.com/css?family=Sansita+One|Material+Icons|Righteous|Quattrocento+Sans')!!}
     
     
 
@@ -15,6 +15,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 </head>
 <body>
+    <style type="text/css">
+      .brand-logo{font-family: 'Sansita One', cursive;}
+      .elegant{font-family: 'Righteous', cursive !important;}
+      .navigation{background-color: #c7ad88 !important;}
+      .logo{color: #935347 !important;}
+      .icon{color: #64706c !important; font-size: 3em !important;}
+      .icon-index{color: #64706c !important; font-size: 1.5em !important;}
+      .borde{border: 1px #64706c solid}
+      .sesion{font-family: 'Quattrocento Sans', sans-serif;}
+    </style>
 <?php $message=Session::get('message')?>
 
 @if($message == 'fail')
@@ -30,8 +40,8 @@
           </div>
 
         <div class="col s12 l6">
-          <h1 class="nombre brown-text center-align">Coffee Land</h1>
-          <h4 class="loginTexto center-align deep-orange-text">Iniciar sesión</h4>
+          <h1 class="logo brand-logo center-align">Coffee Land</h1>
+          <h4 class="loginTexto center-align icon sesion">Iniciar sesión</h4>
                         
           {!!Form::open(['route'=>'log.store', 'method'=>'POST'])!!}
             <div class="row">
@@ -51,13 +61,13 @@
       
             <div class="row center">
               <div class="col s12">
-                {!!Form::submit('Ingresar', ['class'=>'btn deep-orange'])!!}
+                {!!Form::submit('Ingresar', ['class'=>'btn navigation grey-text text-darken-3'])!!}
               </div>
             </div>
           {!!Form::close()!!}
             
 
-          <p class="flow-text center-align">Registra todos los datos estés donde estés, aplicación 100% adaptable (necesitarás conexión a internet)</p>
+          <p class="flow-text center-align sesion">Registra todos los datos estés donde estés, aplicación 100% adaptable (necesitarás conexión a internet)</p>
                     
         </div>
 
