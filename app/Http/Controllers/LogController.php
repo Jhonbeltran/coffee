@@ -38,9 +38,9 @@ class LogController extends Controller
     public function store(LoginRequest $request)
     {
         if(Auth::attempt(['email' => $request['email'], 'password' => $request['password']])){
-            return redirect('/')->with('message', 'success');
+            return redirect('/inicio')->with('message', 'success');
         }
-        return redirect('/login')->with('message', 'fail');
+        return redirect('/')->with('message', 'fail');
     }
 
     /**

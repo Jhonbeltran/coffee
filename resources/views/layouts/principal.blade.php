@@ -24,6 +24,53 @@
       .icon{color: #64706c !important; font-size: 3em !important;}
       .icon-index{color: #64706c !important; font-size: 1.5em !important;}
       .borde{border: 1px #64706c solid}
+      .sesion{font-family: 'Quattrocento Sans', sans-serif;}
+      /* label color */
+       .input-field label {
+         color: #000;
+       }
+       /* label focus color */
+       .input-field input[type=text]:focus + label {
+         color: #935347;
+       }
+       /* label underline focus color */
+       .input-field input[type=text]:focus {
+         border-bottom: 1px solid #935347;
+         box-shadow: 0 1px 0 0 #000;
+       }
+       /* valid color */
+       .input-field input[type=text].valid {
+         border-bottom: 1px solid #000;
+         box-shadow: 0 1px 0 0 #000;
+       }
+       /* invalid color */
+       .input-field input[type=text].invalid {
+         border-bottom: 1px solid #b71c1c ;
+         box-shadow: 0 1px 0 0 #000;
+       }
+       /* icon prefix focus color */
+       .input-field .prefix.active {
+         color: #935347;
+       }
+       /* label focus color */
+       .input-field input[type=password]:focus + label {
+         color: #935347;
+       }
+       /* label underline focus color */
+       .input-field input[type=password]:focus {
+         border-bottom: 1px solid #935347;
+         box-shadow: 0 1px 0 0 #000;
+       }
+       /* valid color */
+       .input-field input[type=password].valid {
+         border-bottom: 1px solid #000;
+         box-shadow: 0 1px 0 0 #000;
+       }
+       /* invalid color */
+       .input-field input[type=password].invalid {
+         border-bottom: 1px solid #b71c1c;
+         box-shadow: 0 1px 0 0 #000;
+       }
     </style>
     <div class="navbar-fixed">
         <nav>
