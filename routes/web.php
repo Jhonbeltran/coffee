@@ -22,3 +22,5 @@ Route::resource('semilla', 'SeedController');
 
 Route::resource('cultivo', 'CropController');
 
+Route::resource('actividad', 'ActivityController');
+
