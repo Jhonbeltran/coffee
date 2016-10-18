@@ -7,8 +7,7 @@
      {!! MaterializeCSS::include_full() !!}
     
     <!--Import Google Icon Font-->
-    {!!Html::style('http://fonts.googleapis.com/icon?family=Material+Icons')!!}
-    {!!Html::style('https://fonts.googleapis.com/css?family=Sansita+One')!!}
+    {!!Html::style('https://fonts.googleapis.com/css?family=Sansita+One|Material+Icons|Righteous')!!}
     
     
     
@@ -18,17 +17,23 @@
 </head>
 <body>
     <style type="text/css">
-      .brand-logo{font-family: 'Sansita One', cursive;};
+      .brand-logo{font-family: 'Sansita One', cursive;}
+      .elegant{font-family: 'Righteous', cursive !important;}
+      .navigation{background-color: #c7ad88 !important;}
+      .logo{color: #935347 !important;}
+      .icon{color: #64706c !important; font-size: 3em !important;}
+      .icon-index{color: #64706c !important; font-size: 1.5em !important;}
+      .borde{border: 1px #64706c solid}
     </style>
     <div class="navbar-fixed">
         <nav>
-          <div class="nav-wrapper z-depth-0 brown lighten-5">
-            <a href="{!!URL::to('/inicio')!!}" class="brand-logo brown-text text-darken-2 hide-on-med-and-down">&nbsp;&nbsp;Coffe Land</a>
-            <a href="{!!URL::to('/')!!}" class="brand-logo  brown-text text-darken-2 hide-on-large-only">Coffe Land</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons brown-text text-darken-2">menu</i></a>
+          <div class="nav-wrapper z-depth-0 navigation">
+            <a href="{!!URL::to('/inicio')!!}" class="brand-logo logo hide-on-med-and-down">&nbsp;&nbsp;Coffe Land</a>
+            <a href="{!!URL::to('/inicio')!!}" class="brand-logo  logo hide-on-large-only">Coffe Land</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="/usuario/create" class="brown-text text-darken-2"><i class="material-icons grey-text left">supervisor_account</i>Nuevo</a></li>
-              <li><a href="/" class="brown-text text-darken-2"><i class="material-icons grey-text left">person_pin</i>Ingresar</a></li>
+              <li><a href="/usuario/create" class="logo elegant"><i class="material-icons icon left">add_circle</i>Nuevo</a></li>
+              <li><a href="/" class="logo elegant"><i class="material-icons icon left">account_circle</i>Ingresar</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="/">Ingresar</a>
@@ -43,15 +48,15 @@
 
     @yield('content')
     
-    <footer class="page-footer  brown lighten-5">
+    <footer class="page-footer  navigation">
         <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="brown-text text-darken-2 brand-logo">Coffee Land</h5>
+                <h5 class="logo brand-logo">Coffee Land</h5>
                 <p class="brown-text text-darken-2">Aplicación para registro de certificación.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="brown-text text-darken-2">Enlaces</h5>
+                <h5 class="brown-text text-darken-2 elegant">Enlaces</h5>
                 <ul>
                   <li><a class="brown-text text-darken-2" href="#!">Contactanos</a></li>
                 </ul>
