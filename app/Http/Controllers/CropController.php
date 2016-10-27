@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Coffee\Http\Requests;
 
 use Coffee\Cultivo;
+use Illuminate\Support\Facades\DB;
 
 class CropController extends Controller
 {
@@ -18,7 +19,8 @@ class CropController extends Controller
     public function index()
     {
         $cultivos = Cultivo::All();
-        return view('cultivo.index', compact('cultivos'));
+        $selections = DB::table('cultivos')->pluck('responsable');
+        return view('cultivo.index', compact('cultivos'),['selections' => $selections]);
     }
 
     /**

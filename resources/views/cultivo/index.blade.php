@@ -31,6 +31,7 @@
 			<th>Dirección</th>
 			<th>Semilla</th>
 			<th>Operación</th>
+			<th>Select</th>
 		</thead>
 		@foreach($cultivos as $cultivo)
 		<tbody>
@@ -39,6 +40,14 @@
 			<td>{{$cultivo->semilla_id}}</td>
 			<td>
 				{!!link_to_route('cultivo.edit', $title = 'Editar', $parameters = $cultivo->id, $attributes = ['class'=>'btn btn-flat waves-effect waves-red'])!!}
+			</td>
+			<td>
+				<select>
+      				<option value="" disabled selected>Choose your option</option>
+      				@foreach($selections as $selection)
+      				<option value="{{$cultivo->id}}">{{$selection}}</option>
+      				@endforeach
+    			</select>
 			</td>
 		</tbody>
 		@endforeach

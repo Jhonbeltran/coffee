@@ -128,7 +128,11 @@
     {!! MaterializeCSS::include_js() !!}
     <script>
       $( document ).ready(
-        function(){$(".button-collapse").sideNav()})
+        function(){
+          $(".button-collapse").sideNav()
+          $('select').material_select()
+        })
+
     </script>
 </body>
 </html>
