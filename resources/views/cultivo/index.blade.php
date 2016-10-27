@@ -45,7 +45,7 @@
 				<select>
       				<option value="" disabled selected>Choose your option</option>
       				@foreach($selections as $selection)
-      				<option value="{{$cultivo->id}}">{{$selection}}</option>
+      				<option value="{{$cultivo->responsable}}">{{$selection}}</option>
       				@endforeach
     			</select>
 			</td>
