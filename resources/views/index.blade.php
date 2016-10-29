@@ -16,9 +16,9 @@
         <div class="icon-block z-depth-1">
             <div class="row"></div>
             <div class="row"></div>
-            <a class="logo center" href="/cultivo/create"><h5 class="center elegant"><i class="material-icons icon-index">mode_edit</i>&nbsp;Ingresar Datos</h5></a>
+            <a class="logo center" href="/cultivo/create"><h5 class="center elegant"><i class="material-icons icon-index">contacts</i>&nbsp;Personal</h5></a>
 
-            <p class="light center">Ingresa los datos de el cultivo, recuerda que estamos buscando la certificación.</p>
+            <p class="light center">Agrega a las personas que conforman el equipo, productores y operadores.</p>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>
@@ -30,7 +30,7 @@
             <div class="row"></div>
             <a class="logo center" href="/semilla/create"><h5 class="center elegant"><i class="material-icons icon-index">opacity</i>&nbsp;Semillas</h5></a>
 
-            <p class="light center">¿Quieres agregar alguna semilla? ¡Te apuesto a que esta va a ser la mejor semilla!.</p>
+            <p class="light center">Actualiza el registro de variedades y especies de las semillas.</p>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>
@@ -45,9 +45,9 @@
         <div class="icon-block z-depth-1">
             <div class="row"></div>
             <div class="row"></div>
-            <a class="logo center" href="/cultivo/"><h5 class="center elegant"><i class="material-icons icon-index">dns</i>&nbsp;Registro</h5></a>
+            <a class="logo center" href="/cultivo/"><h5 class="center elegant"><i class="material-icons icon-index">location_on</i>&nbsp;Ubicación</h5></a>
 
-            <p class="light center">En esta sección puedes revisar todo el registro del cultivo, Mira todo lo que ha sucedido.</p>
+            <p class="light center">Agrega todas las ubicaciones de los cultivos. Gestiona sus direcciones.</p>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>
@@ -58,9 +58,9 @@
         <div class="icon-block z-depth-1">
             <div class="row"></div>
             <div class="row"></div>
-            <a class="logo center" href="/actividad/"><h5 class="center elegant"><i class="material-icons icon-index">face</i>&nbsp;Actividades</h5></a>
+            <a class="logo center" href="/actividad/"><h5 class="center elegant"><i class="material-icons icon-index">face</i>&nbsp;Blog</h5></a>
 
-            <p class="light center">¿Alguna nueva tarea para hacer en el cultivo? ¡Agrégala ahora!</p>
+            <p class="light center">Administra el Blog, agrega entradas de valor para tus clientes</p>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>

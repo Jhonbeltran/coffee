@@ -4,10 +4,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
-				<h5 class="deep-orange-text">Agrega un nuevo usuario</h5>
+			<div class="row"></div>
+				<h5 class="logo">Agrega un nuevo usuario</h5>
 			</div>
 			<div class="col s12 l6">
-				<a href="/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Usuarios Registrados</a>
+				<div class="row"></div>
+				<a href="/usuario/" class="waves-effect waves-red btn-flat right">Usuarios Registrados</a>
 			</div>
 		</div>
 
@@ -15,7 +17,7 @@
 			@include('usuario.forms.usr')
 			<div class="row center">
 	            <div class="col s12">
-	                {!!Form::submit('Registrar', ['class'=>'btn deep-orange'])!!}
+	                {!!Form::submit('Registrar', ['class'=>'btn blue-grey'])!!}
 	            </div>
 	        </div>
 		{!!Form::close()!!}

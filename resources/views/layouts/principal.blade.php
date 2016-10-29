@@ -20,9 +20,11 @@
       .brand-logo{font-family: 'Sansita One', cursive;}
       .elegant{font-family: 'Righteous', cursive !important;}
       .navigation{background-color: #c7ad88 !important;}
+      .nav{color: #c7ad88 !important;}
       .logo{color: #935347 !important;}
       .icon{color: #64706c !important; font-size: 3em !important;}
       .gris{color: #64706c !important;}
+      .grisback{background-color: #64706c !important;}
       .icon-index{color: #64706c !important; font-size: 1.5em !important;}
       .borde{border: 1px #64706c solid}
       .sesion{font-family: 'Quattrocento Sans', sans-serif;}
@@ -74,6 +76,7 @@
          border-bottom: 1px solid #b71c1c;
          box-shadow: 0 1px 0 0 #000;
        }
+       img{height: 60%}
     </style>
     <div class="navbar-fixed">
         <nav>
@@ -82,6 +85,7 @@
             <a href="{!!URL::to('/inicio')!!}" class="brand-logo  logo hide-on-large-only">Coffe Land</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon">menu</i></a>
             <ul class="right hide-on-med-and-down">
+              <li><a href="/usuario/create" class="logo elegant"><i class="material-icons icon left">dns</i>Labores Díarias</a></li>
               <li><a href="/usuario/create" class="logo elegant"><i class="material-icons icon left">add_circle</i>Nuevo</a></li>
               <li><a href="/" class="logo elegant"><i class="material-icons icon left">account_circle</i>Ingresar</a></li>
             </ul>
@@ -90,6 +94,9 @@
               </li>
               <li>
                 <a href="/usuario/create">Nuevo</a>
+              </li>
+              <li>
+                <a href="/usuario/create">Labores Díarias</a>
               </li>
             </ul>
           </div>
@@ -128,7 +135,7 @@
     {!! MaterializeCSS::include_js() !!}
     <script>
       $( document ).ready(
-        function(){$(".button-collapse").sideNav()})
+        function(){$(".button-collapse").sideNav(); $(".dropdown-button").dropdown();})
     </script>
 </body>
 </html>

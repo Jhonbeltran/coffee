@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
-				<h5 class="deep-orange-text">Edición de Usuario</h5>
+				<h5 class="logo">Edición de Usuario</h5>
 			</div>
 			<div class="col s12 l6">
 				<a href="/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Usuarios Registrados</a>
@@ -15,7 +15,7 @@
 			@include('usuario.forms.usr')
 			<div class="row center">
 	            <div class="col s6">
-	                {!!Form::submit('Actualizar', ['class'=>'btn deep-orange '])!!}
+	                {!!Form::submit('Actualizar', ['class'=>'btn grisback '])!!}
 	            </div>
 	        
 		{!!Form::close()!!}
