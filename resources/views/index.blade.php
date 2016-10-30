@@ -16,7 +16,7 @@
         <div class="icon-block z-depth-1">
             <div class="row"></div>
             <div class="row"></div>
-            <a class="logo center" href="/cultivo/create"><h5 class="center elegant"><i class="material-icons icon-index">contacts</i>&nbsp;Personal</h5></a>
+            <a class="logo center" href="/productor/create"><h5 class="center elegant"><i class="material-icons icon-index">contacts</i>&nbsp;Personal</h5></a>
 
             <p class="light center">Agrega a las personas que conforman el equipo, productores y operadores.</p>
             <div class="row"></div>

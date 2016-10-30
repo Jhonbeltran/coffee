@@ -8,7 +8,7 @@ use Coffee\Http\Requests;
 
 use Coffee\Productor;
 
-class Producer extends Controller
+class ProducerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -40,7 +40,7 @@ class Producer extends Controller
     public function store(Request $request)
     {
         Productor::create(['nombre' => $request['nombre']]);
-        return redirect('/productor')->with('message', 'store')
+        return redirect('/productor')->with('message', 'store');
     }
 
     /**
