@@ -4,10 +4,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
+				<div class="row"></div>
 				<h5 class="logo">Agrega una nueva semilla</h5>
 			</div>
 			<div class="col s12 l6">
-				<a href="/productor/" class="waves-effect waves-red btn-flat left btn-large right">Registro de Productores</a>
+				<div class="row"></div>
+				<a href="/productor/" class="waves-effect waves-red btn-flat left right">Registro de Productores</a>
 			</div>
 		</div>
 
@@ -15,7 +17,7 @@
 			@include('productor.forms.pro')
 			<div class="row center">
 	            <div class="col s12">
-	                {!!Form::submit('Registrar', ['class'=>'btn nav'])!!}
+	                {!!Form::submit('Registrar', ['class'=>'btn blue-grey'])!!}
 	            </div>
 	        </div>
 		{!!Form::close()!!}

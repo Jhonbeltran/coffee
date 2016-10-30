@@ -4,10 +4,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
+			<div class="row"></div>
 				<h5 class="logo">Edición de Usuario</h5>
 			</div>
 			<div class="col s12 l6">
-				<a href="/usuario/" class="waves-effect waves-light btn btn-flat left btn-large right">Usuarios Registrados</a>
+				<div class="row"></div>
+				<a href="/usuario/" class="waves-effect waves-light btn btn-flat right">Usuarios Registrados</a>
 			</div>
 		</div>
 
