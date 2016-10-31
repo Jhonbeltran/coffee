@@ -58,7 +58,7 @@
         <div class="icon-block z-depth-1">
             <div class="row"></div>
             <div class="row"></div>
-            <a class="logo center" href="/actividad/"><h5 class="center elegant"><i class="material-icons icon-index">face</i>&nbsp;Blog</h5></a>
+            <a class="logo center" href="/actividad/"><h5 class="center elegant"><i class="material-icons icon-index">content_paste</i>&nbsp;Blog</h5></a>
 
             <p class="light center">Administra el Blog, agrega entradas de valor para tus clientes</p>
             <div class="row"></div>
