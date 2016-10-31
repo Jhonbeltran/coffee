@@ -1,8 +1,11 @@
 			<div class="row">
 				<div class="input-field col s12 m6 l4">
-		            <i class="material-icons prefix">spa</i>
-		            {!!Form::number('productor_id', null, ['class'=>'validate', 'id'=>'icon_prefix'])!!}
-		            <label for="icon_prefix">Productor</label>
+		            <select>
+      					<option value="" disabled selected>Selecciona el Productor</option>
+      					@foreach($productors as $productor)
+      					<option value="{{$productor}}">{{$productor}}</option>
+      					@endforeach
+    				</select>
 		        </div>
 		        <div class="input-field col s12 m6 l4">
 		            <i class="material-icons prefix">location_searching</i>

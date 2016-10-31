@@ -8,6 +8,8 @@ use Coffee\Http\Requests;
 
 use Coffee\Labor;
 
+use Illuminate\Support\Facades\DB;
+
 class TaskController extends Controller
 {
     /**
@@ -28,7 +30,8 @@ class TaskController extends Controller
      */
     public function create()
     {
-        return view('labor.create');
+        $productors = DB::table('productors')->pluck('nombre');
+        return view('labor.create', ['productors' => $productors]);
     }
 
     /**
