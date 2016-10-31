@@ -24,6 +24,8 @@ Route::resource('operador', 'OperatorController');
 Route::resource('especie', 'SpecieController');
 Route::resource('variedad', 'VarietyController');
 
+Route::resource('ubicacion', 'LocationController');
+
 Route::resource('cultivo', 'CropController');
 
 Route::resource('actividad', 'ActivityController');

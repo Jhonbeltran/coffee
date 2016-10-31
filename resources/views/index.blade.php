@@ -45,7 +45,7 @@
         <div class="icon-block z-depth-1">
             <div class="row"></div>
             <div class="row"></div>
-            <a class="logo center" href="/cultivo/"><h5 class="center elegant"><i class="material-icons icon-index">location_on</i>&nbsp;Ubicación</h5></a>
+            <a class="logo center" href="/ubicacion/create"><h5 class="center elegant"><i class="material-icons icon-index">location_on</i>&nbsp;Ubicación</h5></a>
 
             <p class="light center">Agrega todas las ubicaciones de los cultivos. Gestiona sus direcciones.</p>
             <div class="row"></div>
