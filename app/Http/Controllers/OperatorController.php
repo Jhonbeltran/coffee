@@ -27,7 +27,7 @@ class OperatorController extends Controller
      */
     public function create()
     {
-        return view('operador.create');
+        return view('operador/create');
     }
 
     /**
@@ -74,7 +74,7 @@ class OperatorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $operador = Productor::find($id);
+        $operador = Operador::find($id);
         $operador->fill($request->all());
         $operador->save();
         return redirect('operador')->with('message', 'edit');
