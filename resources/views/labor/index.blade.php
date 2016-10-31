@@ -28,13 +28,34 @@
 	<table class="highlight centered">
 		<thead>
 			<th>Id</th>
+			<th>Productor</th>
+			<th>Ubicación</th>
+			<th>Variedad</th>
+			<th>Especie</th>
+			<th>Operador</th>
+			<th>Fecha de siembra</th>
 			<th>Plantas</th>
-			<th>Operación</th>
+			<th>Actividad</th>
+			<th>Jornales</th>
+			<th>Valor Jornales</th>
+			<th>Valor Insumos</th>
+			<th>Observaciones</th>
 		</thead>
 		@foreach($labors as $labor)
 		<tbody>
 			<td>{{$labor->id}}</td>
+			<td>{{$labor->productor_id}}</td>
+			<td>{{$labor->ubicacion_id}}</td>
+			<td>{{$labor->variedad_id}}</td>
+			<td>{{$labor->especie_id}}</td>
+			<td>{{$labor->operador_id}}</td>
+			<td>{{$labor->fecha}}</td>
 			<td>{{$labor->plantas}}</td>
+			<td>{{$labor->actividad}}</td>
+			<td>{{$labor->jornales}}</td>
+			<td>{{$labor->valor_jornales}}</td>
+			<td>{{$labor->valor_insumos}}</td>
+			<td>{{$labor->observaciones}}</td>
 			<td>
 				{!!link_to_route('labor.edit', $title = 'Editar', $parameters = $labor->id, $attributes = ['class'=>'btn-flat waves-effect waves-red'])!!}
 			</td>
