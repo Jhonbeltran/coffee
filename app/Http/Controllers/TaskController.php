@@ -85,7 +85,12 @@ class TaskController extends Controller
     public function edit($id)
     {
         $labor = Labor::find($id);
-        return view('labor.edit',['labor'=>$labor]);
+        $productors = DB::table('productors')->get();
+        $ubicacions = DB::table('ubicacions')->get();
+        $variedads = DB::table('variedads')->get();
+        $especies = DB::table('especies')->get();
+        $operadors = DB::table('operadors')->get();
+        return view('labor.edit',['labor'=>$labor, 'productors' => $productors, 'ubicacions' => $ubicacions, 'variedads' => $variedads, 'especies' => $especies, 'operadors' => $operadors]);
     }
 
     /**
