@@ -8,7 +8,7 @@ use Coffee\Http\Requests;
 
 use Coffee\Variedad;
 
-class varietyController extends Controller
+class VarietyController extends Controller
 {
     /**
      * Display a listing of the resource.

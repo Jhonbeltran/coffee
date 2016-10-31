@@ -5,16 +5,16 @@
 		<div class="row">
 			<div class="col s12 l6">
 				<div class="row"></div>
-				<h5 class="logo">Edición de registro de Especies</h5>
+				<h5 class="logo">Edición de registro de Variedades</h5>
 			</div>
 			<div class="col s12 l6">
 				<div class="row"></div>
-				<a href="/especie" class="waves-effect waves-red btn-flat right">Registro de Especies</a>
+				<a href="/variedad" class="waves-effect waves-red btn-flat right">Registro de Variedades</a>
 			</div>
 		</div>
 
-		{!!Form::model($especie,['route'=>['especie.update', $especie->id], 'method'=>'PUT'])!!}
-			@include('especie.forms.esp')
+		{!!Form::model($variedad,['route'=>['variedad.update', $variedad->id], 'method'=>'PUT'])!!}
+			@include('variedad.forms.var')
 			<div class="row center">
 	            <div class="col s6">
 	                {!!Form::submit('Actualizar', ['class'=>'btn grisback'])!!}
@@ -22,7 +22,7 @@
 	        
 		{!!Form::close()!!}
 		
-	    {!!Form::open(['route'=>['especie.destroy', $especie->id], 'method'=>'DELETE'])!!}
+	    {!!Form::open(['route'=>['variedad.destroy', $variedad->id], 'method'=>'DELETE'])!!}
 			
 	            <div class="col s6">
 	                {!!Form::submit('Eliminar', ['class'=>'btn brown darken-4'])!!}

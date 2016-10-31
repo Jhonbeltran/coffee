@@ -22,6 +22,7 @@ Route::resource('productor', 'ProducerController');
 Route::resource('operador', 'OperatorController');
 
 Route::resource('especie', 'SpecieController');
+Route::resource('variedad', 'VarietyController');
 
 Route::resource('cultivo', 'CropController');
 
