@@ -27,7 +27,7 @@ class OperatorController extends Controller
      */
     public function create()
     {
-        return view('operador/create');
+        return view('operador.create');
     }
 
     /**
@@ -89,6 +89,6 @@ class OperatorController extends Controller
     public function destroy($id)
     {
         Operador::destroy($id);
-        return redirect('/operador')->with('message', 'delete');
+        return redirect('operador')->with('message', 'delete');
     }
 }

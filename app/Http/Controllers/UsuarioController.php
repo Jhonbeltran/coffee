@@ -46,7 +46,7 @@ class UsuarioController extends Controller
             'password' => bcrypt($request['password'])
             ]);
 
-        return redirect('/usuario')->with('message', 'store');
+        return redirect('usuario')->with('message', 'store');
     }
 
     /**
@@ -86,7 +86,7 @@ class UsuarioController extends Controller
         $user->fill($request->all());
         $user->save();
 
-        return redirect('/usuario')->with('message', 'edit');
+        return redirect('usuario')->with('message', 'edit');
     }
 
     /**
@@ -98,6 +98,6 @@ class UsuarioController extends Controller
     public function destroy($id)
     {
         User::destroy($id);
-        return redirect('/usuario')->with('message', 'delete');
+        return redirect('usuario')->with('message', 'delete');
     }
 }

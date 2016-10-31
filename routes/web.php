@@ -21,6 +21,8 @@ Route::resource('log', 'LogController');
 Route::resource('productor', 'ProducerController');
 Route::resource('operador', 'OperatorController');
 
+Route::resource('especie', 'SpecieController');
+
 Route::resource('cultivo', 'CropController');
 
 Route::resource('actividad', 'ActivityController');

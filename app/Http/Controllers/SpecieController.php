@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 use Coffee\Http\Requests;
 
-use Coffee\Cultivo;
+use Coffee\Especie;
 
-class CropController extends Controller
+class SpecieController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class CropController extends Controller
      */
     public function index()
     {
-        $cultivos = Cultivo::All();
-        return view('cultivo.index', compact('cultivos'));
+        $especies = Especie::All();
+        return view('especie.index', compact('especies'));
     }
 
     /**
@@ -28,7 +28,7 @@ class CropController extends Controller
      */
     public function create()
     {
-        return view('cultivo.create');
+        return view('especie.create');
     }
 
     /**
@@ -39,13 +39,8 @@ class CropController extends Controller
      */
     public function store(Request $request)
     {
-        Cultivo::create([
-            'direccion' => $request['direccion'],
-            'responsable' => $request['responsable'],
-            'semilla_id' => $request['semilla_id']
-            ]);
-
-        return redirect('cultivo')->with('message', 'store');
+        Especie::create(['nombre' => $request['nombre']]);
+        return redirect('especie')->with('message', 'store');
     }
 
     /**
@@ -67,8 +62,8 @@ class CropController extends Controller
      */
     public function edit($id)
     {
-        $cultivo = Cultivo::find($id);
-        return view('cultivo.edit',['cultivo'=>$cultivo]);
+        $especie = Especie::find($id);
+        return view('especie.edit',['especie'=>$especie]);
     }
 
     /**
@@ -80,11 +75,10 @@ class CropController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $cultivo = Cultivo::find($id);
-        $cultivo->fill($request->all());
-        $cultivo->save();
-
-        return redirect('cultivo')->with('message', 'edit');
+        $especie = Especie::find($id);
+        $especie->fill($request->all());
+        $especie->save();
+        return redirect('especie')->with('message', 'edit');
     }
 
     /**
@@ -95,7 +89,7 @@ class CropController extends Controller
      */
     public function destroy($id)
     {
-        Cultivo::destroy($id);
-        return redirect('cultivo')->with('message', 'delete');
+        Especie::destroy($id);
+        return redirect('especie')->with('message', 'delete');
     }
 }
