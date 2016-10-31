@@ -85,7 +85,7 @@
             <a href="{!!URL::to('/inicio')!!}" class="brand-logo  logo hide-on-large-only">Coffe Land</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="/usuario/create" class="logo elegant"><i class="material-icons icon left">dns</i>Labores Díarias</a></li>
+              <li><a href="/labor/create" class="logo elegant"><i class="material-icons icon left">dns</i>Labores Díarias</a></li>
               <li><a href="/usuario/create" class="logo elegant"><i class="material-icons icon left">add_circle</i>Nuevo</a></li>
               <li><a href="/" class="logo elegant"><i class="material-icons icon left">account_circle</i>Ingresar</a></li>
             </ul>
@@ -96,7 +96,7 @@
                 <a href="/usuario/create">Nuevo</a>
               </li>
               <li>
-                <a href="/usuario/create">Labores Díarias</a>
+                <a href="/labor/create">Labores Díarias</a>
               </li>
             </ul>
           </div>

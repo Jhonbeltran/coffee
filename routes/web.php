@@ -28,5 +28,7 @@ Route::resource('ubicacion', 'LocationController');
 
 Route::resource('cultivo', 'CropController');
 
+Route::resource('labor', 'TaskController');
+
 Route::resource('actividad', 'ActivityController');
 

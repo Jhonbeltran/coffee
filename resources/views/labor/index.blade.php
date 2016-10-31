@@ -4,17 +4,17 @@
 
 @if($message == 'store')
 	<script>
-		alert('Ubicacion Agregada');
+		alert('Labor Agregada');
 	</script>	
 @endif
 @if($message == 'edit')
 	<script>
-		alert('Ubicacion Editada');
+		alert('Labor Editada');
 	</script>	
 @endif
 @if($message == 'delete')
 	<script>
-		alert('La Ubicacion ha sido eliminada');
+		alert('La Labor ha sido eliminada');
 	</script>	
 @endif
 
@@ -22,21 +22,21 @@
 <div class="container">
 	<div class="row center">
 		<div class="col s12">
-			<h5 class="brown-text card-panel nav grisback">Direcciones Almacenadas</h5>
+			<h5 class="brown-text card-panel nav grisback">Registro de Labores</h5>
 		</div>
 	</div>
 	<table class="highlight centered">
 		<thead>
 			<th>Id</th>
-			<th>Direccion</th>
+			<th>Plantas</th>
 			<th>Operación</th>
 		</thead>
-		@foreach($ubicacions as $ubicacion)
+		@foreach($labors as $labor)
 		<tbody>
-			<td>{{$ubicacion->id}}</td>
-			<td>{{$ubicacion->direccion}}</td>
+			<td>{{$labor->id}}</td>
+			<td>{{$labor->plantas}}</td>
 			<td>
-				{!!link_to_route('ubicacion.edit', $title = 'Editar', $parameters = $ubicacion->id, $attributes = ['class'=>'btn-flat waves-effect waves-red'])!!}
+				{!!link_to_route('labor.edit', $title = 'Editar', $parameters = $labor->id, $attributes = ['class'=>'btn-flat waves-effect waves-red'])!!}
 			</td>
 		</tbody>
 		@endforeach
