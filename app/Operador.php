@@ -4,7 +4,7 @@ namespace Coffee;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Semilla extends Model
+class Operador extends Model
 {
     protected $fillable = ['nombre'];
 }

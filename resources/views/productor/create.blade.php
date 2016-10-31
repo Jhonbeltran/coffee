@@ -1,11 +1,19 @@
 @extends('layouts.principal')
 
 @section('content')
+<nav>
+    <div class="nav-wrapper grisback">
+      <div class="col s12">
+        <a href="/operador/create" class="breadcrumb">&nbsp;Crear Operador</a>
+        <a href="#!" class="breadcrumb">&nbsp;Creando Productor</a>
+      </div>
+    </div>
+</nav>
 	<div class="container">
 		<div class="row">
 			<div class="col s12 l6">
 				<div class="row"></div>
-				<h5 class="logo">Agrega una nueva semilla</h5>
+				<h5 class="logo">Agrega un nuevo Productor</h5>
 			</div>
 			<div class="col s12 l6">
 				<div class="row"></div>

@@ -19,6 +19,7 @@ Route::resource('usuario', 'UsuarioController');
 Route::resource('log', 'LogController');
 
 Route::resource('productor', 'ProducerController');
+Route::resource('operador', 'OperatorController');
 
 Route::resource('cultivo', 'CropController');
 

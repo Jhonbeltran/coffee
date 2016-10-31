@@ -5,10 +5,9 @@ namespace Coffee\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Coffee\Http\Requests;
+use Coffee\Operador;
 
-use Coffee\Semilla;
-
-class SeedController extends Controller
+class OperatorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +16,8 @@ class SeedController extends Controller
      */
     public function index()
     {
-        $semillas = Semilla::All();
-        return view('semilla.index', compact('semillas'));
+        $operadors = Operador::All();
+        return view('operador.index', compact('operadors'));
     }
 
     /**
@@ -28,7 +27,7 @@ class SeedController extends Controller
      */
     public function create()
     {
-        return view('semilla.create');
+        return view('operador.create');
     }
 
     /**
@@ -39,9 +38,8 @@ class SeedController extends Controller
      */
     public function store(Request $request)
     {
-        Semilla::create(['nombre' => $request['nombre']]);
-
-        return redirect('/semilla')->with('message', 'store');
+        Operador::create(['nombre' => $request['nombre']]);
+        return redirect('operador')->with('message', 'store');
     }
 
     /**
@@ -63,8 +61,8 @@ class SeedController extends Controller
      */
     public function edit($id)
     {
-        $semilla = Semilla::find($id);
-        return view('semilla.edit',['semilla'=>$semilla]);
+        $operador = Operador::find($id);
+        return view('operador.edit',['operador'=>$operador]);
     }
 
     /**
@@ -76,12 +74,12 @@ class SeedController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $semilla = Semilla::find($id);
-        $semilla->fill($request->all());
-        $semilla->save();
-
-        return redirect('/semilla')->with('message', 'edit');
+        $operador = Productor::find($id);
+        $operador->fill($request->all());
+        $operador->save();
+        return redirect('operador')->with('message', 'edit');
     }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -90,7 +88,7 @@ class SeedController extends Controller
      */
     public function destroy($id)
     {
-        Semilla::destroy($id);
-        return redirect('/semilla')->with('message', 'delete');
+        Operador::destroy($id);
+        return redirect('/operador')->with('message', 'delete');
     }
 }

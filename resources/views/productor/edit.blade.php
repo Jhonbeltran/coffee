@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col s12 l6">
 				<div class="row"></div>
-				<h5 class="logo">Edición de registro de semillas</h5>
+				<h5 class="logo">Edición de registro de Productores</h5>
 			</div>
 			<div class="col s12 l6">
 				<div class="row"></div>
