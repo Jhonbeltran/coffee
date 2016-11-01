@@ -101,7 +101,7 @@
               <div class="input-field col s12">
                 <i class="material-icons prefix">lock_outline</i>
                 {!!Form::password('password', ['class'=>'validate', 'id'=>'icon_prefix'])!!}
-                <label for="icon_prefix">Escoge una Contraseña</label>
+                <label for="icon_prefix">Inserta tu Contraseña</label>
               </div>
             </div>
       

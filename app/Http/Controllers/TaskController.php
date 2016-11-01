@@ -73,7 +73,12 @@ class TaskController extends Controller
      */
     public function show($id)
     {
-        //
+        
+        $results = DB::table('labors')
+            ->leftJoin('operadors', 'labors.id', '=', 'operadors.id')
+            ->get();
+
+        return view('labor.show', ['results'=>$results]);
     }
 
     /**

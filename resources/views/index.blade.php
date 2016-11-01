@@ -30,7 +30,7 @@
             <div class="row"></div>
             <a class="logo center" href="/especie/create"><h5 class="center elegant"><i class="material-icons icon-index">opacity</i>&nbsp;Semillas</h5></a>
 
-            <p class="light center">Actualiza el registro de variedades y especies de las semillas.</p>
+            <p class="light center">En esta sección puedes actualizar el registro de variedades y especies de las semillas.</p>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>
@@ -58,9 +58,9 @@
         <div class="icon-block z-depth-1">
             <div class="row"></div>
             <div class="row"></div>
-            <a class="logo center" href="/actividad/"><h5 class="center elegant"><i class="material-icons icon-index">content_paste</i>&nbsp;Blog</h5></a>
+            <a class="logo center" href="inicio"><h5 class="center elegant"><i class="material-icons icon-index">content_paste</i>&nbsp;Blog</h5></a>
 
-            <p class="light center">Administra el Blog, agrega entradas de valor para tus clientes</p>
+            <p class="light center">Administra el Blog, agrega entradas de valor para tus clientes y posiciona tu marca.</p>
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>
