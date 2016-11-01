@@ -9,7 +9,7 @@
 			</div>
 			<div class="col s12 l6">
 				<div class="row"></div>
-				<a href="/labores/" class="waves-effect waves-red btn-flat left right">Registro de Labores</a>
+				<a href="/labor/" class="waves-effect waves-red btn-flat left right">Registro de Labores</a>
 			</div>
 		</div>
 
