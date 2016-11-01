@@ -40,6 +40,7 @@
 			<th>Valor Jornales</th>
 			<th>Valor Insumos</th>
 			<th>Observaciones</th>
+			<th>Opciones</th>
 		</thead>
 		@foreach($labors as $labor)
 		<tbody>

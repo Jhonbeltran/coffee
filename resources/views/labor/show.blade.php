@@ -28,12 +28,12 @@
 	<table class="highlight centered">
 		<thead>
 			<th>Id</th>
-			<th>Operador</th>
+			<th>Productor</th>
 		</thead>
 		@foreach($results as $result)
 		<tbody>
-			<td>{{$result->id}}</td>
-			
+			<td>{{$result->labors->id}}</td>
+			<td>{{$result->productors->nombre}}</td>
 		</tbody>
 		@endforeach
 	</table>
