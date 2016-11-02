@@ -25,7 +25,7 @@
 			<h5 class="brown-text card-panel nav grisback">Registro de Labores</h5>
 		</div>
 	</div>
-	<table class="highlight centered">
+	<table class="highlight centered responsive-table">
 		<thead>
 			<th>Id</th>
 			<th>Productor</th>

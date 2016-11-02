@@ -81,7 +81,7 @@ class TaskController extends Controller
             ->join('variedads', 'variedads.id', '=', 'labors.variedad_id')
             ->join('especies', 'especies.id', '=', 'labors.especie_id')
             ->join('operadors', 'operadors.id', '=', 'labors.operador_id')
-            ->select('labors.*', 'labors.id', 'productors.nombre AS nombreProductor', 'variedads.nombre AS nombreVariedad')
+            ->select('labors.*', 'labors.id', 'productors.nombre AS nombreProductor', 'ubicacions.direccion AS direccion', 'variedads.nombre AS nombreVariedad', 'especies.nombre AS nombreEspecie', 'operadors.nombre AS nombreOperador', 'labors.fecha', 'labors.plantas', 'labors.actividad', 'labors.jornales', 'labors.valor_jornales', 'labors.valor_insumos', 'labors.observaciones')
             ->get();
 
         return view('labor.show', ['results'=>$results]);
