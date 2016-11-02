@@ -32,3 +32,8 @@ Route::resource('labor', 'TaskController');
 
 Route::resource('actividad', 'ActivityController');
 
+/*Route::get('pdf', function(){
+	$pdf = PDF::loadView('login');
+	return $pdf->download('labores_diarias.pdf');
+});*/
+
