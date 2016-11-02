@@ -77,7 +77,11 @@ class TaskController extends Controller
 
         $results = DB::table('labors')
             ->join('productors', 'productors.id', '=', 'labors.productor_id')
-            ->select('labors.*', 'labors.productor_id', 'productors.nombre')
+            ->join('ubicacions', 'ubicacions.id', '=', 'labors.ubicacion_id')
+            ->join('variedads', 'variedads.id', '=', 'labors.variedad_id')
+            ->join('especies', 'especies.id', '=', 'labors.especie_id')
+            ->join('operadors', 'operadors.id', '=', 'labors.operador_id')
+            ->select('labors.*', 'labors.id', 'productors.nombre AS nombreProductor', 'variedads.nombre AS nombreVariedad')
             ->get();
 
         return view('labor.show', ['results'=>$results]);

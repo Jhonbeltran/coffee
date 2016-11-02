@@ -29,11 +29,13 @@
 		<thead>
 			<th>Id</th>
 			<th>Productor</th>
+			<th>Variedad</th>
 		</thead>
 		@foreach($results as $result)
 		<tbody>
 			<td>{{$result->productor_id}}</td>
-			<td>{{$result->nombre}}</td>
+			<td>{{$result->nombreProductor}}</td>
+			<td>{{$result->nombreVariedad}}</td>
 		</tbody>
 		@endforeach
 	</table>
