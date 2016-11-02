@@ -9,7 +9,8 @@
 			</div>
 			<div class="col s12 l6">
 				<div class="row"></div>
-				<a href="/labor" class="waves-effect waves-red btn-flat right">Registro de Labores</a>
+				<a href="/labor" class="waves-effect waves-red btn-flat right">Edicion de Labores</a>
+				<a href="/labor/show" class="waves-effect waves-red btn-flat right">Registro de Labores</a>
 			</div>
 		</div>
 
