@@ -32,8 +32,8 @@
 		</thead>
 		@foreach($results as $result)
 		<tbody>
-			<td>{{$result->labors->id}}</td>
-			<td>{{$result->productors->nombre}}</td>
+			<td>{{$result->productor_id}}</td>
+			<td>{{$result->nombre}}</td>
 		</tbody>
 		@endforeach
 	</table>
