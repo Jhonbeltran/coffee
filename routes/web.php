@@ -30,6 +30,8 @@ Route::resource('cultivo', 'CropController');
 
 Route::resource('labor', 'TaskController');
 
+Route::resource('imprimir', 'PrintController');
+
 Route::resource('actividad', 'ActivityController');
 
 /*Route::get('pdf', function(){
