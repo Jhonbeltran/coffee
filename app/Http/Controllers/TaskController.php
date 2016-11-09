@@ -62,7 +62,7 @@ class TaskController extends Controller
             'observaciones' => $request['observaciones']
             ]);
 
-        return redirect('labor')->with('message', 'store');
+        return redirect('labor/show')->with('message', 'store');
     }
 
     /**
