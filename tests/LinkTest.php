@@ -4,17 +4,17 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class ExampleTest extends TestCase
+class LinkTest extends TestCase
 {
     /**
-     * A basic functional test example.
+     * A basic test example.
      *
      * @return void
      */
-    public function testBasicExample()
+    public function testExample()
     {
-        $this->visit('/')
-             ->see('Coffee Land')
-             ->dontSee('Gallina');
+        $this->visit('/productor/create')
+         ->click('link')
+         ->seePageIs('/operador/create');
     }
 }
