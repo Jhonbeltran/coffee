@@ -81,8 +81,8 @@
     <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper z-depth-0 navigation">
-            <a href="{!!URL::to('/inicio')!!}" class="brand-logo logo hide-on-med-and-down">&nbsp;&nbsp;Coffe Land</a>
-            <a href="{!!URL::to('/inicio')!!}" class="brand-logo  logo hide-on-large-only">Coffe Land</a>
+            <a href="{!!URL::to('/inicio')!!}" class="brand-logo logo hide-on-med-and-down">&nbsp;&nbsp;Café Rico</a>
+            <a href="{!!URL::to('/inicio')!!}" class="brand-logo  logo hide-on-large-only">Café Rico</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons icon">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="/labor/create" class="logo elegant"><i class="material-icons icon left">dns</i>Labores Díarias</a></li>

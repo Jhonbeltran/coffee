@@ -86,7 +86,7 @@
           </div>
 
         <div class="col s12 l6">
-          <h1 class="logo brand-logo center-align">Coffee Land</h1>
+          <h1 class="logo brand-logo center-align">Café Rico</h1>
           <h4 class="loginTexto center-align icon sesion">Iniciar sesión</h4>
                         
           {!!Form::open(['route'=>'log.store', 'method'=>'POST'])!!}
