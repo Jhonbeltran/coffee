@@ -8,6 +8,9 @@ use Coffee\Http\Requests;
 
 class FrontController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth', ['only' => ['index']]);
+    }
     /**
      * Display a listing of the resource.
      *

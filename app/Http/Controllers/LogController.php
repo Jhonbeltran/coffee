@@ -40,7 +40,7 @@ class LogController extends Controller
         if(Auth::attempt(['email' => $request['email'], 'password' => $request['password']])){
             return redirect('/inicio')->with('message', 'success');
         }
-        return redirect('/')->with('message', 'fail');
+        return redirect('/login')->with('message', 'fail');
     }
 
     /**
@@ -86,5 +86,10 @@ class LogController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('/login');
     }
 }
