@@ -87,13 +87,10 @@
             <ul class="right hide-on-med-and-down">
               <li><a href="/labor/create" class="logo elegant"><i class="material-icons icon left">dns</i>Labores Díarias</a></li>
               <li><a href="/usuario/create" class="logo elegant"><i class="material-icons icon left">add_circle</i>Nuevo</a></li>
-              <li><a href="/" class="logo elegant"><i class="material-icons icon left">account_circle</i>Ingresar</a></li>
               <li><a href="/logout" class="logo elegant"><i class="material-icons icon left">exit_to_app</i>Salir</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="/logout">Salir</a>
-              </li>
-              <li><a href="/">Ingresar</a>
               </li>
               <li>
                 <a href="/usuario/create">Nuevo</a>
