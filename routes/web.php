@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'FrontController@login');
-Route::get('inicio', 'FrontController@index');
+Route::get('login', 'FrontController@login');
+Route::get('/', 'FrontController@index');
 
 Route::resource('usuario', 'UsuarioController');
 
@@ -33,6 +33,8 @@ Route::resource('labor', 'TaskController');
 Route::resource('imprimir', 'PrintController');
 
 Route::resource('actividad', 'ActivityController');
+
+Route::get('/logout' , 'LogController@logout');
 
 /*Route::get('pdf', function(){
 	$pdf = PDF::loadView('login');
