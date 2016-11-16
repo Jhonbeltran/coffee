@@ -2,7 +2,7 @@
 
 ### Versión minima de laravel requerida [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
 
-La apliacion de Coffee-Land Realiza un seguimiento de las labores díarias para la empresa de café Coffee Land, Nos centramos en un diseño material enfocado en dispositivos moviles, la apliación se encuentra en fase Alpha, no se ha iniciado con el proceso de despliegue en servidor.
+La apliacion de Coffee Realiza un seguimiento de las labores díarias para la empresa Café Rico, Nos centramos en un diseño material enfocado en dispositivos moviles, la apliación se encuentra en fase Alpha, no se ha iniciado con el proceso de despliegue en servidor.
 
 ## Notas:
 
